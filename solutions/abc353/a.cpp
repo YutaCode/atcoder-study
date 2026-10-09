@@ -1,0 +1,42 @@
+#include <iostream> // cout, endl, cin
+#include <iomanip> //setprecision
+#include <string> // string, to_string, stoi
+#include <vector> // vector
+#include <algorithm> // min, max, swap, sort, reverse, lower_bound, upper_bound
+#include <utility> // pair, make_pair
+#include <tuple> // tuple, make_tuple
+#include <cstdint> // int64_t, int*_t
+#include <cstdio> // printf
+#include <map> // map
+#include <queue> // queue, priority_queue
+#include <set> // set
+#include <stack> // stack
+#include <deque> // deque
+#include <unordered_map> // unordered_map
+#include <unordered_set> // unordered_set
+#include <bitset> // bitset
+#include <cctype> // isupper, islower, isdigit, toupper, tolower
+#include <cmath> //sqrt
+#define rep(i, n) for (int i = 0; i < n; i++)
+#define all(v) v.begin(), v.end()
+
+using namespace std;
+
+
+int main() {
+	int n;
+	cin >> n;
+	int ans = -1;
+	int h1;
+	cin >> h1;
+	rep(i, n - 1) {
+		int h;
+		cin >> h;
+		if (h1 < h) {
+			ans = i + 2;
+			break;
+		}
+	}
+	cout << ans << endl;
+	return 0;
+}
